@@ -14,7 +14,6 @@ export class ListErrorsComponent {
     this.formattedErrors = Object.keys(errorList.errors || {}).map(
       (key) => `${key} ${errorList.errors[key].message}`
     );
-    console.log(errorList);
   }
 
   get errorList() {
